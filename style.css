@@ -1,0 +1,163 @@
+/* General styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  background-color: rgba(0, 98, 204, 0.5);
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+nav ul {
+  padding: 20px 20px;
+  /* Adjusted top and bottom padding for taller navbar */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 2s ease-out;
+  gap: 20px;
+}
+
+section {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(240, 242, 245, 0.5);
+  color: #333;
+  border-top: 1px solid #eaeaea;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 2s ease-out;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+
+nav a:hover {
+  color: #0062cc;
+  animation: colorPulse 0.5s ease-out infinite;
+}
+
+nav a:visited {
+  color: inherit;
+}
+
+
+@keyframes colorPulse {
+  0% {
+    color: #333;
+  }
+
+  50% {
+    color: #0062cc;
+  }
+
+  100% {
+    color: #333;
+  }
+}
+
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+
+  header h1,
+  header p {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px;
+    margin: 10px auto;
+    width: auto;
+    /* Changed from fixed width to auto */
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  header h1,
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  section {
+    padding: 15px;
+    margin: 5px auto;
+    width: auto;
+    /* Changed from fixed width to auto */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
