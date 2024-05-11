@@ -95,10 +95,6 @@ nav a:hover {
   animation: colorPulse 0.5s ease-out infinite;
 }
 
-nav a:visited {
-  color: inherit;
-}
-
 
 @keyframes colorPulse {
   0% {
