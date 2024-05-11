@@ -87,12 +87,18 @@ footer {
 
 nav a {
   text-decoration: none;
+  color: black;
+  /* Changed to make nav text black */
 }
 
 
 nav a:hover {
   color: #0062cc;
   animation: colorPulse 0.5s ease-out infinite;
+}
+
+nav a:visited {
+  color: inherit;
 }
 
 
